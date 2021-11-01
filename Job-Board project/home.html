@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobber - Home</title>
+    <link rel="icon" href="img/logo_jobber.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="white">
+        <div class="nav-wrapper container">
+            <a href="home.html" class="brand-logo">
+                <img src="img/logo_jobber.png" alt="Logo" width="110" height="118">
+            </a>
+            <div class="link_align">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="login.html" class="black-text ">Login</a></li>
+                    <li><a href="signup.html" class="black-text">Sign up</a></li>
+                    <li><a class='dropdown-trigger btn blue' href='#' data-target='dropdown2'>Upload your CV <i class="material-icons right">arrow_drop_down</i></a>
+
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown2' class='dropdown-content'>
+                            <li><a href="./login.html" class="blue-text"><i class="material-icons">account_circle</i>Sign in</a></li>
+                            <li class="divider">OR</li>
+                            <li><a href="./signup.html" class="blue-text"><i class="material-icons">add_circle</i>Sign up</a></li>
+                        </ul>
+                        <script>
+                            //with JQuery
+                            $('.dropdown-trigger').dropdown();
+                        </script>
+                    </li>
+                    <li><a class='dropdown-trigger indigo-text' href='#' data-target='dropdown3'>Employers / Post Job ad</a>
+
+                        <ul id='dropdown3' class='dropdown-content'>
+                            <li><a href="./login.html" class="indigo-text"><i class="material-icons">account_circle</i>Sign in</a></li>
+                            <li class="divider"></li>
+                            <li><a href="./employers.html" class="indigo-text"><i class="material-icons">add_circle</i>Sign up</a></li>
+                        </ul>
+                        <script>
+                            $('.dropdown-trigger').dropdown();
+                        </script>
+                    </li>
+
+                </ul>
+            </div>
+            <ul id="nav-mobile" class="sidenav">
+
+                <li><a href="login.html" class="black-text ">Login</a></li>
+                <li><a href="signup.html" class="black-text">Sign up</a></li>
+                <li> <a class='dropdown-trigger btn blue' href='#' data-target='dropdown1'>Upload your CV <i class="material-icons right">arrow_drop_down</i></a>
+
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="./login.html" class="blue-text"><i class="material-icons">account_circle</i>Sign in</a></li>
+                        <li class="divider">OR</li>
+                        <li><a href="./signup.html" class="blue-text"><i class="material-icons">add_circle</i>Sign up</a></li>
+                    </ul>
+                    <script>
+                        $('.dropdown-trigger').dropdown();
+                    </script>
+                </li>
+                <li><a class='dropdown-trigger indigo-text' href='#' data-target='dropdown4'>Employers / Post Job ad</a>
+
+                    <ul id='dropdown4' class='dropdown-content'>
+                        <li><a href="./login.html" class="indigo-text"><i class="material-icons">account_circle</i>Sign in</a></li>
+                        <li class="divider"></li>
+                        <li><a href="./employers.html" class="indigo-text"><i class="material-icons">add_circle</i>Sign up</a></li>
+                    </ul>
+                    <script>
+                        $('.dropdown-trigger').dropdown();
+                    </script>
+                </li>
+
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons icon-black">menu</i></a>
+        </div>
+    </nav>
+    <div class="row a">
+        <div class="nav-wrapper col s12 m12 l6">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" required placeholder="What?">
+                    <label class="label-icon" for="search"><i class="material-icons">travel_explore</i></label>
+                    <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                </div>
+            </form>
+        </div>
+        <div class="nav-wrapper col s12 m12 l6">
+            <form>
+                <div class="input-field">
+                    <input id="search2" type="search" required placeholder="Where?">
+                    <label class="label-icon" for="search"><i class="material-icons">where_to_vote</i></label>
+                    <i class="material-icons" onclick="document.getElementById('search2').value = ''">close</i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="center">
+        <a class="icon-black btn"><i class="material-icons left">search</i>Find a job</a>
+    </div>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Your career takes another turn </h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Jobber provides hundreds of job offers available in your area</h5>
+            </div>
+            <div class="row center">
+                <a href="./signup.html" id="download-button" class="btn-large icon-black">Sign up</a>
+            </div>
+            <br><br>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons icon-orange">work</i></h2>
+                        <h5 class="center">Speeds up career</h5>
+
+                        <p class="light center-align">Delivering <b>more value</b> in your career is an essential skill to getting ahead. After six to twelve months in a given role, many of us become comfortable with the <b>routine work</b> we are expected to complete. To expand your
+                            <b>horizons</b>, check out this list of the lastest jobs offers, or search the one that fits you!</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons icon-orange">manage_search</i></h2>
+                        <h5 class="center">User Experience Focused</h5>
+
+                        <p class="light center-align">Jobber includes powerful features, like: messaging, a mobile-responsive layout, beautiful design, seeker and recruter profiles.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons icon-orange">multiline_chart</i></h2>
+                        <h5 class="center">Easy to work with</h5>
+
+                        <p class="light center-align">In Jobber, your account is easy to manage, maintain and use, meaning you can focus on growing your """""".</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+    <h4 class="center">Lastest job offers : </h4>
+    <div class="row">
+        <div class="col s12 m6 l6">
+            <div class="medium card icon-black">
+                <div class="card-content white-text">
+                    <span class="card-title">DEVELOPPEUR FRONT END ANGULAR H/F</span>
+                    <h6>95880 Enghien-les-Bains</h6>
+                    <p>Créée en 2007, CAPENCY (anciennement CAP ADRESSE) est un acteur majeur du marché de la gestion des données clients. Nous concevons, développons et commercialisons des solutions innovantes permettant de traiter l’intégralité des enjeux
+                        liés aux coordonnées clients (adresse, e-mail, téléphone…). Nos solutions permettent aux directions métiers de nos clients (grands noms dans les secteurs du e-commerce, chaînes de magasins, centres d’appels, PME…) de détenir des
+                        données fiables afin d’optimiser leurs actions marketing et maintenir le lien avec leurs clients.</p>
+                </div>
+                <div class="card-action">
+                    <a class="btn-flat activator">Learn more</a>
+                    <a href="./form_apply.html" class="btn-flat ">Apply now!</a>
+                </div>
+
+                <div class="card-reveal white-text">
+                    <span class="card-title">DEVELOPPEUR FRONT END ANGULAR H/F
+                <i class="material-icons right">close</i></span>
+                    <div class="container2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l6">
+            <div class="medium card icon-black">
+                <div class="card-content white-text">
+                    <span class="card-title">Developpeur Web H/F Odoo</span>
+                    <H6>75010 Paris 10e</H6>
+                    <p>Gécodis est spécialisée dans le E-commerce depuis 22 ans au travers de son site internet Habitat et Jardin qui vend vend essentiellement des produits de l'équipement de la maison, du jardin et de la piscine. Pour accompagner sa croissance
+                        et sa migration vers ERP ODOO la société recherche un Développeur informatique HF avec une connaissance et une maîtrise totale d’Odoo.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a class="btn-flat activator">Learn more</a>
+                    <a href="./form_apply.html" class="btn-flat">Apply now!</a>
+                </div>
+
+                <div class="card-reveal white-text">
+                    <span class="card-title">Developpeur Web H/F Odoo
+                <i class="material-icons right">close</i></span>
+                <div class="container2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m6 l6">
+            <div class="medium card icon-black">
+                <div class="card-content white-text">
+                    <span class="card-title">Intégrateur Web – Développeur Front H/F</span>
+                    <h6>75011 Paris 11e</h6>
+                    <p>Coccinet est une agence Web crée en 2004. Pour accompagner notre développement et renforcer notre équipe, nous recherchons un.e Intégrateur.trice Web. Spécialisés dans la réalisation de projets à forte valeur ajoutée technique, nous
+                        offrons à nos clients (PME / Grands comptes) des prestations adaptées à leurs besoins, orientées métiers. L’étendue de notre offre couvre l’ensemble des étapes de mise en place des applications multimédia : du conseil à la réalisation
+                        et à la maintenance.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a class="btn-flat activator">Learn more</a>
+                    <a href="./form_apply.html" class="btn-flat">Apply now!</a>
+
+                </div>
+                <div class="card-reveal white-text">
+                    <span class="card-title">Intégrateur Web – Développeur Front H/F
+                  <i class="material-icons right">close</i></span>
+                  <div class="container2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l6">
+            <div class="medium card icon-black">
+                <div class="card-content white-text">
+                    <span class="card-title">Développeur, Intégrateur de Médias Interactifs / spécialisation CMS
+                </span>
+                    <h6>92120 Montrouge</h6>
+                    <p>Notre agence web et digitale Itekagency intervient auprès d'entreprises de tout types, sur des prestations telles que : Branding, Web, Print, Marketing, Communication. Dans un contexte dynamique et entouré(e) d'une équipe chaleureuse
+                        et enthousiaste (webdesigner, graphiste, développeurs, marketing communication ...) , vos principales missions seront :
+                        <br>- Développer les sites vitrines selon les demandes des clients à l'aide du CMS le plus adapté (PRESTASHOP et/ou WORDPRESS)
+                        <br> - Maintenir et effectuer les améliorations sur les différents sites
+                        <br>- Intégrations et / ou créations de plugins
+                        <br> - Développer des projets en PHP
+
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a class="btn-flat activator">Learn more</a>
+                    <a href="./form_apply.html" class="btn-flat">Apply now!</a>
+                </div>
+                <div class="card-reveal white-text">
+                    <span class="card-title">Développeur, Intégrateur de Médias Interactifs / spécialisation CMS
+                  <i class="material-icons right">close</i></span>
+                  <div class="container2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About Us</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any contribution that would assist in the development of our project would be greatly appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text link" href="./my_page.html">Modify my account</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text link" href="login.html">Login</a></li>
+                        <li><a class="white-text link" href="signup.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="black-text text-lighten-3">Hugo et Kenza </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+
+</html>

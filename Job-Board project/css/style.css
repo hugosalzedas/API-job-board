@@ -1,0 +1,43 @@
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+nav {
+    height: 120px;
+}
+
+.link_align {
+    padding-top: 25px;
+}
+
+.a {
+    padding-top: 10px;
+}
+
+i.icon-black {
+    color: #32546d;
+}
+
+a.icon-black {
+    background-color: #32546d;
+}
+
+i.icon-orange {
+    color: orange;
+}
+
+div.icon-black {
+    background-color: #32546d;
+}
+
+.card .card-reveal {
+    background-color: #32546d;
+}
+
+.link:hover {
+    background-color: gold;
+}
